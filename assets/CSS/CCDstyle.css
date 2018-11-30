@@ -151,19 +151,18 @@
 }
 /* * Make this absolute positioned * at the top left of the screen */
  #menu {
+     display:none;
      position: absolute;
      width: 300px;
      margin: -100px 0 0 0;
      padding: 50px;
+     right: -50px;
      padding-top: 125px;
-     right: -100px;
      background: #ededed;
      list-style-type: none;
      -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
      transform-origin: 0% 0%;
-     transform: translate(100%, 0);
-     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
  #menu li {
      padding: 10px 0;
@@ -218,34 +217,33 @@
 }
 /* I modified the following code for my hero from W3schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image */
  #hero{
-     display: inline-block;
      background-size: cover;
      background-color: #5941A9;
-     height: 80vh;
-     max-width: 100vw;
+     width: 100vw;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     align-content: center;
 }
  #hero-text{
      font-family: lato-light,lato,sans-serif;
      color: white;
      text-align: left;
-     width: 50vw;
-     height: 100%;
-     display: inline-block;
-     padding-top: calc(45vh - 30pt);
+     padding: 40px;
+     max-width: 45%;
 }
  #hero-text a {
      color: white;
 }
  #hero-icon{
-     height: 100%;
-     display: inline-block;
      vertical-align: top;
      overflow: hidden;
      text-align: center;
+     min-width: 165px;
+     max-width: 50%;
 }
  #hero-icon img {
-     width:100%;
-     height: 100%;
+     max-width:50%;
 }
  body h3 {
      color: #5941A9;
@@ -295,7 +293,7 @@
 }
 /* one id for each of the six pics;
  move backgorund imag into id (specific stuff) and general stuff in a class, everything in round courners can be moved into a class (image container) */
- .pinpoint:hover {
+ .pinpoint:hover{
      background-image: url("../images/CCD_discover_animate.svg");
      z-index: 1;
 }

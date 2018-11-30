@@ -45,6 +45,9 @@ function animate() {
 
 // Window onLoad Function; put click handlers first //
 
-window.onload = function() {
+$(function(){
     animate();
-    };
+    $("#hamburger").on("click", function(){
+        $("#menu").toggle("slide", {direction:"right"});
+    });
+});
