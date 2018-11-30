@@ -25,7 +25,7 @@
     /*[class*="col-"] {
          width: 100%;
     }
-    */
+     */
      .flex-items{
          width: calc(100% - 20px);
     }
@@ -252,7 +252,7 @@
      padding-left: 40px;
      padding-right: 40px;
     /*text-decoration: underline #426AC7;
-    */
+     */
 }
  .underline {
      border-bottom: 5px solid #5941A9;
@@ -415,9 +415,9 @@
 }
 /*Contact Us Form, modified from W3schools: https://www.w3schools.com/howto/howto_css_contact_form.asp*/
 /* * {
-    box-sizing: border-box;
+     box-sizing: border-box;
 }
-*/
+ */
  input[type=text], select, textarea {
      font-size: 10pt;
      font-family: lato-light,lato,sans-serif;
