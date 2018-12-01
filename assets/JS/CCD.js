@@ -43,7 +43,7 @@ function animate() {
   requestAnimationFrame(animate)
 }
 
-// Window onLoad Function; put click handlers first //
+// Window onLoad Function//
 
 $(function(){
     animate();
